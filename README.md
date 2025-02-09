@@ -48,7 +48,7 @@ Booked is a comprehensive platform designed to streamline appointment scheduling
     *   Cloud Pub/Sub
 *   **APIs & Integrations:**
     *   Nylas (Email)
-    *   Twilio (SMS, Voice - *Conceptual for Calls*)
+    *   Telnyx (SMS, Voice - *Conceptual for Calls*)
     *   Stripe/PayPal (Payment Gateway)
     *   Google Cloud Speech-to-Text & Dialogflow (AI Phone Bookings - *Conceptual*)
     *   FHIR (for potential EHR integration - *Conceptual*)
