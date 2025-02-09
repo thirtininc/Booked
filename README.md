@@ -1,78 +1,58 @@
-# booking-app/booking-app/README.md
+# Booked: The All-in-One Appointment Scheduling and Practice Growth Platform for Healthcare
 
-# Booking Application
+## Overview
 
-This project is a booking application that consists of three main components:
+Booked is a comprehensive platform designed to streamline appointment scheduling, enhance client communication, and empower healthcare professionals to grow their practices. It offers a suite of applications for web, iOS, and Android, providing a seamless experience for both practitioners and clients.
 
-1. **Backend**: A Django application that handles the server-side logic, database interactions, and API endpoints.
-2. **Frontend**: A React web application that provides the user interface for web users.
-3. **Mobile**: A React Native application that serves mobile users on both Android and iOS platforms.
+## Features
 
-## Project Structure
+### For Practitioners (Web Application):
 
-```
-booking-app
-├── backend
-│   ├── booking_app
-│   ├── manage.py
-│   └── requirements.txt
-├── frontend
-│   ├── public
-│   ├── src
-│   ├── package.json
-│   └── README.md
-├── mobile
-│   ├── android
-│   ├── ios
-│   ├── src
-│   ├── app.json
-│   ├── package.json
-│   └── README.md
-└── README.md
-```
+*   **Dashboard:** Key performance indicators (KPIs), recent activity, quick links.
+*   **Calendar:** Day, week, month, and agenda views; drag-and-drop scheduling; appointment management; availability management.
+*   **Clients:** Client list, profiles, in-app messaging.
+*   **Services & Pricing:** Service management, pricing settings, packages.
+*   **Demand Forecasting:** AI-powered predictions and pricing recommendations (using BigQuery and Vertex AI).
+*   **Subscription Management:** Plan creation and subscriber management.
+*   **Reports & Analytics:** Customizable reports, integration with BigQuery and Vertex AI.
+*   **Settings:** Account settings, booking rules, integrations (Nylas, Google Healthcare Cloud, payment gateways).
+*   **Website Booking Plugin:** Embeddable widget for practitioner websites.
+*   **Admin Panel:** (Django Admin) for overall site and user management.
 
-## Getting Started
+### For Clients (iOS and Android Apps):
 
-### Backend
+*   **Search and Discovery:** Search for practitioners by specialty, location, etc.
+*   **Booking:** Select services, appointment times, and handle payments.
+*   **Appointments:** View upcoming/past appointments, reschedule/cancel, receive reminders.
+*   **Subscriptions:** Manage subscriptions and payment information.
+*   **Communication:** In-app messaging, notifications.
+*   **Profile:** Manage personal information and appointment history.
 
-1. Navigate to the `backend` directory.
-2. Install the required packages using:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Run the Django server:
-   ```
-   python manage.py runserver
-   ```
+### AI-Powered Phone Bookings (Conceptual):
 
-### Frontend
+*   Voice assistant for answering calls, booking appointments, and managing client interactions (using Google Cloud Speech-to-Text and Dialogflow).
 
-1. Navigate to the `frontend` directory.
-2. Install the required packages using:
-   ```
-   npm install
-   ```
-3. Start the React application:
-   ```
-   npm start
-   ```
+## Technology Stack
 
-### Mobile
+*   **Frontend (Web):** React, Redux/Zustand, Material-UI/Ant Design, Axios
+*   **Frontend (Mobile):** React Native, React Navigation, Redux/Zustand
+*   **Backend:** Python/Django, Django REST Framework (DRF)
+*   **Database:** PostgreSQL (Cloud SQL on Google Cloud)
+*   **Cloud Platform:** Google Cloud Platform (GCP)
+    *   Google Healthcare Cloud
+    *   BigQuery
+    *   Vertex AI
+    *   Cloud Run/App Engine
+    *   Cloud Storage
+    *   Cloud Functions
+    *   Cloud Pub/Sub
+*   **APIs & Integrations:**
+    *   Nylas (Email)
+    *   Twilio (SMS, Voice - *Conceptual for Calls*)
+    *   Stripe/PayPal (Payment Gateway)
+    *   Google Cloud Speech-to-Text & Dialogflow (AI Phone Bookings - *Conceptual*)
+    *   FHIR (for potential EHR integration - *Conceptual*)
+* **Containerization**: Docker, Kubernetes
+* **CI/CD**: Gitlab CI/CD
 
-1. Navigate to the `mobile` directory.
-2. Install the required packages using:
-   ```
-   npm install
-   ```
-3. Run the React Native application:
-   ```
-   npm start
-   ```
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or features.
-
-## License
-
-This project is licensed under the MIT License.
+## Directory Structure
